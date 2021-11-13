@@ -16,9 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from tutorial import quickstart
-
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('', include('quickstart.urls'))
+    path('', include('quickstart.urls'))
 ]
